@@ -10,7 +10,7 @@ import { elements, renderLoader, clearLoader } from './views/base';
 
 //import { SingleEntryPlugin } from 'webpack';
 
-/* GLobal state of the app
+/* Global state of the app
 * - search object
 * - current recipe object
 * - shopping list iobject

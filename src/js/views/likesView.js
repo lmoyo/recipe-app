@@ -1,3 +1,7 @@
+/**
+ * Likes View
+ */
+
 import { elements } from './base';
 import { limitRecipeTitle } from './searchView';
 

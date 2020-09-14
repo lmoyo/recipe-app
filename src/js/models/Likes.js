@@ -1,4 +1,6 @@
-// Likes Model
+/**
+ * Likes Model
+ */
 
 export default class Likes {
 	constructor() {

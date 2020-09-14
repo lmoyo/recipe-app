@@ -1,3 +1,7 @@
+/**
+ * Search View
+ */
+
 import { elements } from './base';
 
 export const getInput = () => elements.searchInput.value;
@@ -12,7 +16,7 @@ export const clearResults = () => {
 
 }
 
-
+//highlight active recipe
 export const highlightSelected = id => {
     const recipes = Array.from(document.querySelectorAll('.results__link'));
     recipes.forEach(el => {
@@ -22,7 +26,7 @@ export const highlightSelected = id => {
 }
 
 
-
+//truncate title
 export const limitRecipeTitle = (title, limit = 17) => {
     if(title.length > limit){
         const newTitle = [];

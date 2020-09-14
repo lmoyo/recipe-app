@@ -1,21 +1,25 @@
+/**
+ * Recipe View
+ */
+
 import { elements } from './base';
-// import { fraction } from 'math.js';
-//import { Fraction } from 'fraction.js';
 
 export const clearRecipe = () => {
 	elements.recipe.innerHTML = '';
 };
 
-// const formatAmount = (amount) => {
-// 	return amount ? new Fraction(amount).simplify(0.00001).toFraction(true) : '?';
-// };
+//Round ingredients only if they have more than 2 decimals
+const formatAmount = (amount) => {
+	return +(Math.round(amount + 'e+2') + 'e-2');
+};
+
 
 const createIngredients = (ingredient) => `
     <li class="recipe__item">
         <svg class="recipe__icon">
             <use href="img/icons.svg#icon-check"></use>
         </svg>
-        <div class="recipe__count">${ingredient.amount}</div>
+        <div class="recipe__count">${formatAmount(ingredient.amount)}</div>
         <div class="recipe__ingredient">
             <span class="recipe__unit">${ingredient.unit}</span>
             ${ingredient.ingredient}
@@ -23,6 +27,7 @@ const createIngredients = (ingredient) => `
     </li>
 `;
 
+//render recipe
 export const renderRecipe = (recipe, isLiked) => {
 	const markup = `
         <figure class="recipe__fig">
@@ -96,7 +101,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 This recipe was provided by
                 <span class="recipe__by">${
 									recipe.author
-								}</span>. Please check out intructions on their website.
+								}</span>. Please check out the instructions on their website.
             </p>
             <a class="btn-small recipe__btn" href="${
 							recipe.url
@@ -111,6 +116,8 @@ export const renderRecipe = (recipe, isLiked) => {
     `;
 	elements.recipe.insertAdjacentHTML('afterbegin', markup);
 };
+
+
 
 export const updateServingsIng = (recipe) => {
 	//update servings
