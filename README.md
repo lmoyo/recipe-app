@@ -1,6 +1,6 @@
 # nosh
 
-Implemented the JavaScript logic to query a third party API. The application allows users to search for recipes, add items to shopping lists and create a favourites list.
+Implemented the JavaScript functionality for this project. The application queries a third party API and allows users to search for recipes, add items to shopping lists and create a favourites list.
 
 Instructions:
 - In your terminal navigate to your cloned folder
