@@ -1,5 +1,6 @@
 # nosh
-A JavaScript web app that queries the a third party API to display recipe information
+
+Implemented the JavaScript logic to query a third party API. The application allows users to search for recipes, add items to shopping lists and create a favourites list.
 
 Instructions:
 - In your terminal navigate to your cloned folder
@@ -7,6 +8,6 @@ Instructions:
 - execute "run npm start" to run the application
 - search for recipes e.g. pizza
 
-
+Implemented the JavaScript logic for 
 API used:
 https://forkify-api.herokuapp.com/
