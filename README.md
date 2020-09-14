@@ -1,5 +1,6 @@
 # nosh
-A JavaScript web app that queries the a third party API to display recipe information
+
+Implemented the JavaScript functionality for this project. The application queries a third party API and allows users to search for recipes, add items to shopping lists and create a favourites list.
 
 Instructions:
 - In your terminal navigate to your cloned folder
