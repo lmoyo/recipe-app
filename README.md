@@ -8,6 +8,6 @@ Instructions:
 - execute "run npm start" to run the application
 - search for recipes e.g. pizza
 
-Implemented the JavaScript logic for 
+
 API used:
 https://forkify-api.herokuapp.com/
