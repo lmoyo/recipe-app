@@ -1,12 +1,13 @@
 import { elements } from './base';
+// import { fraction } from 'math.js';
 //import { Fraction } from 'fraction.js';
 
 export const clearRecipe = () => {
 	elements.recipe.innerHTML = '';
 };
 
-// const formatAmount = amount => {
-//     return amount ? (new Fraction(amount).simplify(0.00001)).toFraction(true) : '?';
+// const formatAmount = (amount) => {
+// 	return amount ? new Fraction(amount).simplify(0.00001).toFraction(true) : '?';
 // };
 
 const createIngredients = (ingredient) => `
