@@ -5,7 +5,7 @@ Implemented the JavaScript functionality for this project. The application queri
 Instructions:
 - In your terminal navigate to your cloned folder
 - run "npm install" to install required packages
-- execute "run npm start" to run the application
+- execute "npm run start" to run the application
 - search for recipes e.g. pizza
 
 
